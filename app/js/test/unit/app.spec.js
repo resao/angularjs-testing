@@ -1,19 +1,23 @@
 describe('app testing', function(){
 
+    beforeEach(module('angularJSTestingApp'));
+
     describe('MainCtrl', function(){
+        var scope, ctrl;
+
+        beforeEach(inject(function($controller, $rootScope){
+            scope = $rootScope.new();
+            ctrl = $controller('MainCtrl', {$scope: scope});
+        }));
+
+        afterEach(function(){
+            //Cleanup code
+        });
+
         it('should initialise the title in the scope', function(){
-            module('angularJSTestingApp');
-            
-            var scope = {};
-            var ctrl;
-
-            inject(function($controller){
-                ctrl = $controller('MainCtrl', {$scope: scope});
-            });
-
             expect(scope.title).toBeDefined();
             expect(scope.title).toBe('Testing AngularJS Applications');
         });
     });
-    
+
 });
