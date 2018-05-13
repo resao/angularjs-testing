@@ -1,19 +1,26 @@
 {
-  "name": "AngularJSTesting",
+  "name": "angularjs-testing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resao/angularjs-testing.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/resao/angularjs-testing/issues"
+  },
+  "homepage": "https://github.com/resao/angularjs-testing#readme",
   "devDependencies": {
-    "bower": "^1.6.3",
-    "jasmine-core": "^2.3.4",
-    "karma": "^0.13.14",
-    "karma-jasmine": "^0.3.6",
-    "karma-phantomjs-launcher": "^0.2.1",
-    "phantomjs": "^1.9.18"
+    "bower": "^1.8.4",
+    "jasmine": "^3.1.0",
+    "karma": "^2.0.2",
+    "karma-jasmine": "^1.1.2",
+    "karma-phantomjs-launcher": "^1.0.4"
   }
 }
