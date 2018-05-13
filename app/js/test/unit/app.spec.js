@@ -6,7 +6,7 @@ describe('app testing', function(){
         var scope, ctrl;
 
         beforeEach(inject(function($controller, $rootScope){
-            scope = $rootScope.new();
+            scope = $rootScope.$new();
             ctrl = $controller('MainCtrl', {$scope: scope});
         }));
 
